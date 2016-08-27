@@ -1,0 +1,41 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto';
+@mont: Montserrat, Tahoma, Verdana;
+@robo: Robotto, Arial;
+
+@claro: #ccc;
+@escuro: #333;
+@vermelho: #f00;
+
+@tam1: 2.5em;
+@tam2: 1.8em;
+@tam3: 1.5em;
+@tam4: 1.1em;
+
+.logo {
+	float: left;
+	font: @tam1 @mont;
+	color: @vermelho;
+	width: 400px;
+	img {
+		width: 30%;
+	}
+}
+.logo:hover {
+	color: @vermelho;
+	text-decoration: none;
+}
+.info {
+	float: right;
+	padding-top: 15px;
+	span {
+		color: @vermelho;
+	}
+	a {
+		color: @claro;
+		text-decoration: none;
+		margin-left: 15px;
+	}
+	a:hover {
+		color: @escuro;
+	}
+}

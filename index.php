@@ -60,5 +60,53 @@
 					</div>
 				</div>
 			</header>
+			<nav class="navbar navbar-default">
+				<div class="container container-fluid">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="nav navbar-nav">
+							<li><a href="index.php">Home</a></li>
+							<li><a href="sobre">Sobre</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Veículos <i class="caret"></i>
+							</a>
+								<ul class="dropdown-menu">
+									<li><a href="nacionais">Nacionais</a><li>
+									<li><a href="importados">Importados</a><li>
+								</ul>
+							</li>
+							<li><a href="contato">Contato</a></li>						
+						</ul>
+						<form name="form1" method="post" action="buscar" class="navbar-form navbar-right">
+							<div class="input-group input-group-lg">
+								<input type="text" name="busca" placeholder="palavra-chave..." class="form-control">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-default">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</nav>
+			<main>
+				
+			</main>
+			<footer>
+				<div class="container">
+					<span class="pull-left">
+						<img src="imgs/logo.png" alt="Car Sale">
+						2016 - Todos os direitos reservados
+					</span>
+					<span class="pull-right">
+						Desenvolvido por avantagem
+					</span>
+				</div>
+			</footer>
 		</body>
 	</html>

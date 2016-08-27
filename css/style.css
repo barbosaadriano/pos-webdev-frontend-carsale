@@ -1,0 +1,29 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto';
+.logo {
+  float: left;
+  font: 2.5em Montserrat, Tahoma, Verdana;
+  color: #f00;
+  width: 400px;
+}
+.logo img {
+  width: 30%;
+}
+.logo:hover {
+  color: #f00;
+  text-decoration: none;
+}
+.info {
+  float: right;
+  padding-top: 15px;
+}
+.info span {
+  color: #f00;
+}
+.info a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.info a:hover {
+  color: #333;
+}

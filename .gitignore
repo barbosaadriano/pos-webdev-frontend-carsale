@@ -1,0 +1,5 @@
+./css/*
+!./css/style.less
+!./css/style.css
+./js/*
+./*.swp

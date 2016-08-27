@@ -104,7 +104,8 @@
 			</nav>
 			<main>
 			<?php
-				$page = "$page.php"; 
+
+				$page = ($page=="index") ? "home.php" :  "$page.php"; 
 				if (file_exists($page))
 					include_once($page);
 				else 

@@ -27,3 +27,68 @@
 .info a:hover {
   color: #333;
 }
+footer {
+  background: #333;
+  width: 100%;
+  padding: 10px 0px;
+  color: #fff;
+}
+footer img {
+  width: 10%;
+}
+.navbar {
+  border-radius: 0px;
+  margin-top: 10px;
+  background: #fff;
+  border: 0px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+.navbar .container-fluid ul li {
+  padding: 10px 5px;
+  border-left: 1px solid #ccc;
+}
+.navbar .container-fluid ul li a {
+  font: 1.1em Montserrat, Tahoma, Verdana;
+}
+.navbar .container-fluid ul li a:hover,
+.navbar .container-fluid ul li a:active {
+  color: #ccc;
+  background: #333;
+}
+.navbar .container-fluid li:last-child {
+  border-right: 1px solid #ccc;
+}
+.navbar .container-fluid li:hover,
+.navbar .container-fluid li:active {
+  color: #ccc;
+  background: #333;
+}
+.navbar .container-fluid .open {
+  background: #333;
+}
+.navbar .container-fluid .open ul,
+.navbar .container-fluid .open ul li,
+.navbar .container-fluid .open ul li a,
+.navbar .container-fluid .open a:focus,
+.navbar .container-fluid .open li {
+  color: #ccc;
+  background: #333;
+}
+.navbar .container-fluid .open ul li a:hover {
+  color: #ccc;
+  background: #333;
+}
+.navbar .container-fluid .open li {
+  border: 0px;
+}
+@media (max-width: 418px) {
+  header .logo,
+  header .info {
+    width: 100%;
+    text-align: center;
+  }
+  footer span {
+    width: 100%;
+    text-align: center;
+  }
+}

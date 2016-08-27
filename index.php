@@ -1,3 +1,11 @@
+<?php
+//	define("URL","http://localhost/carsale/");
+	$page = "home";
+	if (isset($_REQUEST['url'])):
+		$page = trim($_REQUEST['url']);		
+	endif;
+
+ ?>
 <!DOCTYPE html>
 	<html>
 		<head>
@@ -95,8 +103,16 @@
 				</div>
 			</nav>
 			<main>
-				
+			<?php
+				$page = "$page.php"; 
+				if (file_exists($page))
+					include_once($page);
+				else 
+					include_once('404.php');
+
+			?>	
 			</main>
+			<div class="clearfix"></div>
 			<footer>
 				<div class="container">
 					<span class="pull-left">

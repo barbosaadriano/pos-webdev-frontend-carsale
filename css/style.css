@@ -150,6 +150,13 @@ h3 {
   -moz-filter: blur(0px);
   filter: blur(0px);
 }
+.help-block {
+  color: #f00;
+}
+.help-block ul li {
+  list-style: none;
+  margin-left: -40px;
+}
 @media (max-width: 481px) {
   #banner .carousel-caption {
     font-size: 1.1em;

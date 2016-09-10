@@ -12,112 +12,167 @@
 @tam4: 1.1em;
 
 .logo {
-	float: left;
-	font: @tam1 @mont;
-	color: @vermelho;
-	width: 400px;
-	img {
-		width: 30%;
-	}
+    float: left;
+    font: @tam1 @mont;
+    color: @vermelho;
+    width: 400px;
+    img {
+        width: 30%;
+    }
 }
 .logo:hover {
-	color: @vermelho;
-	text-decoration: none;
+    color: @vermelho;
+    text-decoration: none;
 }
 .info {
-	float: right;
-	padding-top: 15px;
-	span {
-		color: @vermelho;
-	}
-	a {
-		color: @claro;
-		text-decoration: none;
-		margin-left: 15px;
-	}
-	a:hover {
-		color: @escuro;
-	}
+    float: right;
+    padding-top: 15px;
+    span {
+        color: @vermelho;
+    }
+    a {
+        color: @claro;
+        text-decoration: none;
+        margin-left: 15px;
+    }
+    a:hover {
+        color: @escuro;
+    }
 }
 footer {
-	background: @escuro;
-	width: 100%;
-	padding: 10px 0px;
-	color: #fff;
-	margin-top: 20px;
-	img {
-		width: 10%;
-	}	
+    background: @escuro;
+    width: 100%;
+    padding: 10px 0px;
+    color: #fff;
+    margin-top: 20px;
+    img {
+        width: 10%;
+    }	
 }
 .navbar {
-	border-radius: 0px;
-	margin-top: 10px;
-	background: #fff;
-	border: 0px;
-	box-shadow: 0px 0px 10px @claro;
-	.container-fluid {
-		ul li {
-			padding: 10px 5px;
-			border-left: 1px solid @claro;
-			a {
-				font: @tam4 @mont;
-			}
-			a:hover, a:active {
-				color: @claro;
-				background: @escuro;
-			}
-		}
-		li:last-child {
-			border-right: 1px solid @claro;
-		}
-		li:hover, li:active {
-			color: @claro;
-			background: @escuro;
-		}
-		.open {
-			background: @escuro;
-			ul, ul li, ul li a, a:focus, li {
-				color: @claro;
-				background: @escuro;
-			}
-			ul li a:hover {
-				color: @claro;
-				background: @escuro;
-			}
-			li {
-				border: 0px;
-			}
-		}
-	}
+    border-radius: 0px;
+    margin-top: 10px;
+    background: #fff;
+    border: 0px;
+    box-shadow: 0px 0px 10px @claro;
+    .container-fluid {
+        ul li {
+            padding: 10px 5px;
+            border-left: 1px solid @claro;
+            a {
+                font: @tam4 @mont;
+            }
+            a:hover, a:active {
+                color: @claro;
+                background: @escuro;
+            }
+        }
+        li:last-child {
+            border-right: 1px solid @claro;
+        }
+        li:hover, li:active {
+            color: @claro;
+            background: @escuro;
+        }
+        .open {
+            background: @escuro;
+            ul, ul li, ul li a, a:focus, li {
+                color: @claro;
+                background: @escuro;
+            }
+            ul li a:hover {
+                color: @claro;
+                background: @escuro;
+            }
+            li {
+                border: 0px;
+            }
+        }
+    }
 }
 h1, h2, h3 {
-	color: @vermelho;
-	font-family: @mont;
+    color: @vermelho;
+    font-family: @mont;
 }
 h1 {
-	font-size: @tam1;
+    font-size: @tam1;
 }
 h2 { font-size: @tam2 }
 h3 { font-size: @tam3 }
 .erro {
-	font: @tam3 @robo;
-	text-align: center;
-	width: 400px;
+    font: @tam3 @robo;
+    text-align: center;
+    width: 400px;
 }
 .btn-danger, .well {
-	border-radius: 0px;
+    border-radius: 0px;
 }
-@media (max-width: 418px) {
-	header {
-		.logo, .info {
-			width: 100%;
-			text-align: center;
-		}
-	}
-	footer {
-		span {
-			width: 100%;
-			text-align: center;
-		}
-	}
+#banner {
+    float: left;
+    margin-bottom: 40px;
+    .carousel-caption {
+        background: rgba(0,0,0,0.6);
+        font: @tam2 @mont;
+        color: #eee;
+        text-shadow: 2px 2px 2px #000;
+        left: 10%;
+        right: 10%;
+        bottom: 20%;
+        span {
+            font-size: @tam1;
+        }
+    }
+}
+.thumbnail {
+    h2 {
+        height: 50px;
+    }
+    p {
+        height: 120px;
+    }
+}
+.pb {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all ease-in-out 0.7s;
+}
+.pb:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+    transition: all ease-in-out 0.7s;
+}
+.blur:hover {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+}
+@media (max-width: 481px) {
+    #banner {
+        .carousel-caption {
+            font-size: @tam4;
+            bottom: 10%;
+            span {
+                font-size: @tam3;
+            }
+        }
+    }
+    header {
+        .logo, .info {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    footer {
+        span {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }

@@ -157,6 +157,14 @@ h3 {
   list-style: none;
   margin-left: -40px;
 }
+.help-block ul li:before {
+  content: "\f06a  ";
+  font-family: FontAwesome;
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+  padding: 20px;
+}
 @media (max-width: 481px) {
   #banner .carousel-caption {
     font-size: 1.1em;

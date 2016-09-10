@@ -44,7 +44,7 @@ endif;
         <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
 
         <script type="text/javascript">
-            $(document).ready(function(){
+            $(document).ready(function () {
                 $('input,select,textarea').not('[type=submit]').jqBootstrapValidation();
             });
         </script>
